@@ -1,0 +1,70 @@
+#modal-image{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+}
+.left_modal{
+    width: 40%;
+    height: 480px;
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0% 3%;
+}
+.imgg_modal{
+    width: 326px;
+    height: 326px;
+    background-color: white;
+    border-radius: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: -20%;
+}
+.imgg_modal h1{
+    font-size: 31px;
+    color: black;
+}
+.left_modal h2{
+    font-size: 25px;
+    color: white;
+}
+.left_modal button{
+    width: 365px;
+    height: 56px;
+    font-size: 21px;
+    background-color: red;
+    color: white;
+    border-radius: 316px;
+    border: none;
+}
+.right_modal{
+    width: 850px;
+    height: 400px;
+    border-radius: 48px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.r_left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.r_box{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
