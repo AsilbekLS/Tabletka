@@ -1,20 +1,38 @@
-#modal-image{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+#modal {
+    transform: scale(0);
+    transition: transform 1s;
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    padding-top: 15vw;
+    
+  }
+  
+  #modal-image {
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 15px;
-}
-.left_modal{
+  }
+  
+  .left_modal {
     width: 40%;
     height: 480px;
-    /* border: 1px solid; */
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    padding: 0% 3%;
-}
-.imgg_modal{
+    padding: 0 3%;
+  }
+  
+  .imgg_modal {
     width: 326px;
     height: 326px;
     background-color: white;
@@ -24,16 +42,14 @@
     align-items: center;
     justify-content: space-around;
     margin-top: -20%;
-}
-.imgg_modal h1{
+  }
+  
+  .imgg_modal h1 {
     font-size: 31px;
     color: black;
-}
-.left_modal h2{
-    font-size: 25px;
-    color: white;
-}
-.left_modal button{
+  }
+  
+  .left_modal button {
     width: 365px;
     height: 56px;
     font-size: 21px;
@@ -41,8 +57,9 @@
     color: white;
     border-radius: 316px;
     border: none;
-}
-.right_modal{
+  }
+  
+  .right_modal {
     width: 850px;
     height: 400px;
     border-radius: 48px;
@@ -50,21 +67,78 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-.r_left{
+  }
+  
+  .r_left {
     width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-
-}
-.r_box{
+  }
+  
+  .r_box {
     width: 100%;
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
+  }
+  
+
+
+
+
+
+
+
+  
+
+
+.modal2{
+    transition: 1s;
+    position: fixed;
+    display: flex;
+    z-index: 19;
+   transform: scale(0);
+    align-items: center;
+    justify-content: center ;
+    width: 100vw;
+    
+    height: 100%;   
+    max-height: 1300px;
+    
+  max-width: 1920px;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.587);
+}
+.but_mod2{
+    display: flex;
+   position: absolute;
+  
+    align-items: start;
+    height: 95%;
+}
+#modal_content2{
+    height: auto;
+    width: auto;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+#modal_content2{
+position: relative;
+}
+#modal_content2>img{
+    height: auto;
+    width: auto;
+   
+}
+.close-button2{
+    position: absolute  ;
+    top: 0px;
+    right: 0px;
 }

@@ -16,6 +16,7 @@ body {
   max-width: 1920px;
   display: flex;
   flex-direction: column;
+ 
   /* gap: 50px; */
 }
 .home {
@@ -29,8 +30,8 @@ body {
 }
 .left {
   width: 50% !important;
-
-  max-width: 745px;
+z-index: 1;
+  max-width: 931.2px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -58,6 +59,15 @@ body {
   width: 50%;
   height: 100%;
   background-color: #fff;
+ 
+ 
+}
+.right>img{
+  width: 100%;
+  max-width: 1210px;
+  height: 100%;
+/* margin-left: -250px; */
+
 }
 .container > p {
   font-size: 18px;
@@ -446,9 +456,7 @@ footer {
 
 
 @media (min-width: 50px) and (max-width: 668px) {
-  #modal{
-    margin-top: 50px;
-  }
+  
   #modal_cont{
     width: 100%;
     height: 100%;
@@ -496,3 +504,59 @@ footer {
   height: 300px;
  }
 }
+
+@media (min-width: 200px) and (max-width: 890px) {
+
+
+.home{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rigth>img{
+  max-width: 1210px !important;
+  height: 100% !important;
+  width: 100% !important;
+  margin: 0px !important;
+  display: none;
+  margin-right: 2050px;
+
+}
+
+.right {
+  width: 800px;
+  max-width: 800px; 
+  height: 100%;
+  max-height: 800px;
+  background-color: #000000;
+  display: flex;
+  justify-content: center ;
+  align-items: center;
+ 
+ 
+}
+
+}
+
+@media (min-width: 200px) and (max-width: 500px) {
+
+  .rightS2{
+    gap: 1px !important ;
+    padding-top: 150px !important;
+    padding-bottom: 10px !important ;
+  }
+  .home{
+    height: 100%;
+    max-height: 1300px;
+  }
+  .long_card{
+    height: 150px !important;
+    margin-top:2px !important;  
+  }  
+  .leftS2{
+    padding-bottom: 100px !important;
+    height: 1500px !important;
+  }
+  
+  
+  }
