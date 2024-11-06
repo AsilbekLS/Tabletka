@@ -59,7 +59,12 @@ z-index: 1;
   width: 50%;
   height: 100%;
   background-color: #fff;
+  
  
+ 
+}
+.rightS2{
+  background-image: url(./assets/modal-img/fon.png);
  
 }
 .right>img{
@@ -202,16 +207,17 @@ z-index: 1;
   gap: 55px;
 }
 .card {
-  width: 250px;
-  height: 230px;
+  width: 350px;
+  height: 290px;
   border-radius: 37px;
   padding-block-end: 10px;
-  gap: 12px;
+  gap: 22px;
   display: flex;
   flex-direction: column;
   background-color: #333333;
-  justify-content: end;
+  padding-top: 130px;
   align-items: center;
+
   position: relative;
 }
 .card > p {
@@ -219,7 +225,7 @@ z-index: 1;
   font-family: sans-serif;
   font-weight: 300;
   color: #fff;
-  font-size: 14px;
+  font-size: 24px;
   line-height: 18px;
   text-align: center;
   max-width: 100%;
@@ -237,7 +243,7 @@ z-index: 1;
 }
 .card > img {
   position: absolute;
-  left: 5px;
+  left: 60px;
   top: -120px;
   width: 250px;
   height: 200px;
@@ -337,6 +343,92 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 14px;
+}
+.footer_container{
+  position: relative; 
+  background-image: url('./assets/modal-img/img_layer1.png'),url('./assets/modal-img/Mask\ group.png');
+ display: flex;
+ background-repeat: no-repeat, no-repeat;
+ justify-content: center;
+ background-position: right top, left top;
+ align-items: center;
+padding: 100px;
+}
+.left{
+  background-image: url('./assets/modal-img/img_layer3.png');
+  background-repeat: no-repeat;
+  background-size: 120% 80%;
+
+
+
+}
+.leftS2{
+  background-image: url('./assets/modal-img/img_layer2\ —\ копия.png');
+  background-repeat: no-repeat;
+  background-size: 1000px 100%;
+  background-position-y: -400px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  /* overflow-x: hidden; */
+}
+
+.lines3{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+margin-left: 100px;
+}
+
+.right_line3{
+  position: absolute;
+right: 100px;
+  width: 50%;
+  
+  height: 100%; /* Высота на весь экран */
+  /* background-image: url('./assets/modal-img/image5.png'); */
+  background-size: cover, cover;
+  background-position: left top, right top;
+  background-repeat: no-repeat, no-repeat;
+  transform: rotateY(180deg);
+  
+  /* background-position: 100px 1000px 10px 10px; */
+}
+.img2 {
+  display: none; /* Скрываем внутренний div, так как он нам не нужен */
+}
+
+.footer_text {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #fff;
+  font-size: 20px;
+  position: relative; /* Убедимся, что это не имеет абсолютного позиционирования */
+  z-index: 1; /* Слои поверх фонового изображения */
+}
+
+.lines3{
+  position: absolute;
+  display: flex;
+left: -100px;
+
+  width: 100%;
+  max-width: 1920px;
+  
+}
+.lines3>img{
+  position: absolute;
+  top: -600px;
+  
+}
+.img2{
+  position: absolute ;
+  top: -600px;
+  left: 640px;
 }
 .footer_text {
   display: flex;
@@ -453,7 +545,42 @@ footer {
   display: none;
 }
 
+.footer_texts2{
+  width: 240px;
+  height: 100px;
+  display: flex !important;
+ flex-direction: row;
+  gap: 10px;
+} 
+.footer_text1{
+  display: flex;
+}
 
+.footer_text2{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+  padding-left: 100px;
+}
+.sledite>span{
+  color: white;
+}
+.sledite{
+  width: 200px;
+  
+}
+.telega{
+  width: 120px;
+  padding-left: 15px;
+  justify-content: space-between;
+  display: flex;
+}
+.footer_text1>b{
+  width: 230px;
+}
 
 @media (min-width: 50px) and (max-width: 668px) {
   
@@ -507,27 +634,37 @@ footer {
 
 @media (min-width: 200px) and (max-width: 890px) {
 
-
-.home{
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  .footer_texts2{
+    flex-direction: column !important;
+    padding-left: 40px;
+  }
+  .footer_text2{
+  
+    padding-left: 20px !important;
+  } 
+  .home{
+    height: 1300px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
 .rigth>img{
-  max-width: 1210px !important;
-  height: 100% !important;
-  width: 100% !important;
+
+  height: 100px !important;
+  width: 300px !important;
   margin: 0px !important;
   display: none;
-  margin-right: 2050px;
+  
 
 }
-
+.left{
+  height: 500px !important;
+}
 .right {
-  width: 800px;
-  max-width: 800px; 
-  height: 100%;
-  max-height: 800px;
+  width: 100% !important;
+
+  height: 400px !important;
+
   background-color: #000000;
   display: flex;
   justify-content: center ;
@@ -539,23 +676,72 @@ footer {
 }
 
 @media (min-width: 200px) and (max-width: 500px) {
+  .card>p{
+    font-size: 24px !important;
+    
+  }
+  .footer_texts2{
+    flex-direction: column !important;
+    padding-left: 40px;
+  }
+  .footer_text2{
+  
+    padding-left: 20px !important;
+  }
+.footer_container{
+  height: 500px !important;
+display: flex;
+flex-direction: row !important;
+  flex-wrap: wrap !important;
+}
+.footer_cards{
+  display: flex !important;
+  flex-direction: row !important;
+}
+.footer_texts{
+display: flex;
+flex-direction: row !important;
+flex-wrap: wrap !important;
+}
 
+.footer_label{}
   .rightS2{
     gap: 1px !important ;
     padding-top: 150px !important;
     padding-bottom: 10px !important ;
   }
-  .home{
-    height: 100%;
-    max-height: 1300px;
+  .leftS2{
+    border-radius: 30px !important;
   }
+ .rightS2{
+  padding: 150px 1px 1px 1px !important;
+ }
+ 
   .long_card{
-    height: 150px !important;
+    height: 100px !important;
     margin-top:2px !important;  
+    padding: 0 0 0 110px !important;
+    
   }  
+  .long_card>p{
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    
+  }
+  .long_card_thumb{
+    height: 105px !important;
+    width: 100px !important  ;
+    margin-top: 5px !important;
+
+    
+  }
+  .long_card_thumb{
+
+height: 100% !important;
+  }
   .leftS2{
     padding-bottom: 100px !important;
-    height: 1500px !important;
+    height: 1200px !important;
   }
   
   
