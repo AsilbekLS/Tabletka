@@ -584,7 +584,11 @@ left: -100px;
 .footer_text1>b{
   width: 230px;
 }
-
+.links{
+  position: relative;
+  z-index: 2;
+  background-color: #333333;
+}
 @media (min-width: 50px) and (max-width: 668px) {
   
   #modal_cont{
