@@ -601,6 +601,18 @@ left: -100px;
   z-index: 2;
   background-color: #333333;
 }
+@media (min-width: 1398px) and (max-width: 1707px) {
+.home{
+  height: 900px;
+}
+}
+@media (min-width: 1250px) and (max-width: 1397px) {
+  .home{
+    height: 800px !important;
+  }
+
+
+}
 @media (min-width: 50px) and (max-width: 668px) {
   
   #modal_cont{
