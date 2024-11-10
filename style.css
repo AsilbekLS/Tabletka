@@ -66,11 +66,7 @@ body {
  
  
 }
-.rightS2{
-  background-image: url(./assets/modal-img/fon.png);
-  background-color: #00000000 !important;
- 
-}
+
 .img_right{
   width: 75%;
   height: 100%;
@@ -139,6 +135,9 @@ body {
 
 /* section 2 */
 .section2 {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url(./assets/modal-img/fon.png);
   width: 100%;
   display: flex;
   background-color: #ededed;
@@ -780,7 +779,7 @@ flex-direction: row !important;
 flex-wrap: wrap !important;
 }
 
-.footer_label{}
+
   .rightS2{
     gap: 1px !important ;
     padding-top: 150px !important;
