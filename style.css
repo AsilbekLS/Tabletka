@@ -36,6 +36,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 150px;
+  z-index: 2;
   /* justify-content: center; */
   padding-block: 82px 205px;
   align-items: center;
@@ -58,21 +59,24 @@ body {
 .right {
   width: 50%;
   
+  overflow: hidden;
   height: 100%;
-  background-color: #fff;
+ 
   
  
  
 }
 .rightS2{
   background-image: url(./assets/modal-img/fon.png);
+  background-color: #00000000 !important;
  
 }
 .right>img{
-  width: 100%;
-  max-width: 1210px;
+  width: 125% ;
+ 
   height: 100%;
-/* margin-left: -250px; */
+  margin-left: -25%;
+
 
 }
 .container > p {
