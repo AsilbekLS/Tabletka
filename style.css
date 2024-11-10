@@ -709,7 +709,13 @@ left: -100px;
     border-radius: 40px !important;
     height: 1100px !important;
   }
-
+  .img_right{
+    margin: 0 !important;
+  }
+  .img_right>img{
+    width: 130%;
+    margin-left: -15% !important;
+  }
 }
 @media (min-width: 200px) and (max-width: 460px) {
 
